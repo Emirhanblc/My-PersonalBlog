@@ -5,16 +5,23 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* Updated CSS variables to match user's exact specifications */
 /* CSS Variables for Theme */
+=======
+/* CSS Variables for Theme - standardized */
+>>>>>>> 9a5ab87 (chore: import local changes)
 :root {
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #64748b;
   --card-bg: #f8fafc;
   --border: #e2e8f0;
+<<<<<<< HEAD
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
+=======
+>>>>>>> 9a5ab87 (chore: import local changes)
 }
 
 body.dark {
@@ -23,8 +30,11 @@ body.dark {
   --muted: #94a3b8;
   --card-bg: #1e293b;
   --border: #334155;
+<<<<<<< HEAD
   --accent: #60a5fa;
   --accent-hover: #93c5fd;
+=======
+>>>>>>> 9a5ab87 (chore: import local changes)
 }
 
 /* Adding utility classes for reusability */
@@ -47,12 +57,20 @@ body.dark {
 }
 
 .card:hover {
+<<<<<<< HEAD
   background-color: #f1f5f9;
   transform: translateY(-1px);
 }
 
 body.dark .card:hover {
   background-color: #2d3748;
+=======
+  background-color: rgba(0,0,0,0.03);
+  transform: translateY(-1px);
+}
+body.dark .card:hover {
+  background-color: rgba(255,255,255,0.03);
+>>>>>>> 9a5ab87 (chore: import local changes)
 }
 
 /* Badge styling for categories */
@@ -103,6 +121,7 @@ body.dark .badge {
   color: var(--text);
 }
 
+<<<<<<< HEAD
 .muted {
   color: var(--text-tertiary);
 }
@@ -111,6 +130,8 @@ body.dark .badge {
   color: var(--text-tertiary);
   margin: 0 0.375rem;
 }
+=======
+>>>>>>> 9a5ab87 (chore: import local changes)
 
 /* Base Styles */
 html {
@@ -128,6 +149,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+<<<<<<< HEAD
 /* Header & Navigation */
 .header {
   border-bottom: 1px solid var(--border);
@@ -217,6 +239,56 @@ body.dark .theme-toggle .moon-icon {
   margin: 0 auto;
   padding: 4rem 1.5rem;
 }
+=======
+/* layout */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links a {
+  color: var(--text);
+  font-size: .9rem;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.theme-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  padding: .4rem .6rem;
+  font-size: .8rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+>>>>>>> 9a5ab87 (chore: import local changes)
 
 /* Hero section with improved typography hierarchy */
 /* Hero Section */
@@ -479,6 +551,7 @@ body.dark .project-preview-card:hover {
   background-color: var(--accent-hover);
 }
 
+<<<<<<< HEAD
 /* Footer with 3-column layout */
 /* Footer */
 .footer {
@@ -554,11 +627,29 @@ body.dark .project-preview-card:hover {
 }
 
 /* Responsive Design */
+=======
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding: 1.5rem 1rem 3rem;
+  max-width: 760px;
+  font-size: .8rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+>>>>>>> 9a5ab87 (chore: import local changes)
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
     gap: 1rem;
   }
+<<<<<<< HEAD
 
   .nav-links {
     gap: 1rem;
@@ -601,6 +692,8 @@ body.dark .project-preview-card:hover {
   .main {
     padding: 2rem 1rem;
   }
+=======
+>>>>>>> 9a5ab87 (chore: import local changes)
 }
 
 /* Adding styles for blog list page */

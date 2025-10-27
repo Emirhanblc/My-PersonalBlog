@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Emirhan Talha BALCI - Blog</title>
@@ -44,3 +45,145 @@
   <script src="/assets/js/theme.js"></script>
 </body>
 </html>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilgisayar Mühendisliği öğrencisi. Sistem yönetimi ve web backend üzerine teknik yazılar.">
+    <title>Blog - Sistem Yönetimi ve Web Backend</title>
+    
+    <!-- Adding Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Blog - Sistem Yönetimi ve Web Backend">
+    <meta property="og:description" content="Production ortamlarında karşılaştığım sorunları ve çözümlerini paylaşıyorum. Sistem yönetimi, backend geliştirme ve güvenlik üzerine teknik yazılar.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/assets/og/default.png">
+    <meta property="og:locale" content="tr_TR">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Sistem Yönetimi ve Web Backend">
+    <meta name="twitter:description" content="Production ortamlarında karşılaştığım sorunları ve çözümlerini paylaşıyorum.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/og-image.png">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="/">[Ad Soyad]</a>
+        <ul class="nav-links">
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/projects/index.html">Projeler</a></li>
+          <li><a href="/ops-log/">Ops Log</a></li>
+          <li><a href="/about.html">Hakkımda</a></li>
+          <li><a href="/contact.html">İletişim</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Tema">🌓</button>
+      </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="hero-title">Sistem yönetimi ve backend geliştirme üzerine teknik yazılar</h1>
+            <p class="hero-subtitle">Production ortamlarında karşılaştığım sorunları ve çözümlerini paylaşıyorum. Gerçek projelerle çalışıyorum.</p>
+            <p class="hero-description">Bilgisayar Mühendisliği öğrencisiyim. Güvenlik, yedekleme altyapısı ve network konularına odaklanıyorum.</p>
+        </section>
+
+        <section class="recent-posts">
+            <div class="section-header">
+                <h2 class="section-title">Son Yazılar</h2>
+                <a href="blog/index.html" class="section-link">Tüm yazılar →</a>
+            </div>
+
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-meta">
+                        <time datetime="2025-04-15" class="muted">15 Nisan 2025</time>
+                        <span class="separator">·</span>
+                        <span class="badge">Güvenlik</span>
+                    </div>
+                    <h3 class="post-title">
+                        <a href="blog/lvm-extend-xfs.html">LVM Extend Sonrası XFS Büyümedi: Çözüm Adımları</a>
+                    </h3>
+                    <p class="post-excerpt">Production VMware ortamında LVM genişletme işlemi sonrası XFS dosya sisteminin büyümeme sorununu nasıl çözdüm. Adım adım çözüm.</p>
+                    <div class="post-footer">
+                        <span class="read-time muted">5 dk okuma</span>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-meta">
+                        <time datetime="2025-04-08" class="muted">8 Nisan 2025</time>
+                        <span class="separator">·</span>
+                        <span class="badge">Network</span>
+                    </div>
+                    <h3 class="post-title">
+                        <a href="blog/first-post.html">Backup Network Ayrıştırma: VLAN Yapılandırması</a>
+                    </h3>
+                    <p class="post-excerpt">Yedekleme trafiğini ana network'ten ayırmak için VLAN tabanlı çözüm. Performans artışı ve güvenlik iyileştirmeleri.</p>
+                    <div class="post-footer">
+                        <span class="read-time muted">7 dk okuma</span>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-meta">
+                        <time datetime="2025-03-28" class="muted">28 Mart 2025</time>
+                        <span class="separator">·</span>
+                        <span class="badge">Android</span>
+                    </div>
+                    <h3 class="post-title">
+                        <a href="blog/first-post.html">Firebase Realtime Database ile Offline-First Uygulama</a>
+                    </h3>
+                    <p class="post-excerpt">Android uygulamasında Firebase Realtime Database kullanarak offline-first mimari nasıl kurulur. Senkronizasyon stratejileri.</p>
+                    <div class="post-footer">
+                        <span class="read-time muted">9 dk okuma</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects-preview">
+            <div class="section-header">
+                <h2 class="section-title">Projeler</h2>
+                <a href="projects.html" class="section-link">Tüm projeler →</a>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-preview-card">
+                    <h3 class="project-preview-title">VMware Backup Altyapısı</h3>
+                    <p class="project-preview-stack muted">VMware vSphere · Veeam · VLAN · Linux</p>
+                    <p class="project-preview-description">Production ortamında 50+ VM için otomatik yedekleme sistemi. VLAN ayrıştırması ile network trafiği optimizasyonu.</p>
+                    <a href="projects.html" class="project-preview-link">Detayları gör →</a>
+                </article>
+
+                <article class="project-preview-card">
+                    <h3 class="project-preview-title">Firewall Kural Yönetim Sistemi</h3>
+                    <p class="project-preview-stack muted">Python · Flask · PostgreSQL · pfSense API</p>
+                    <p class="project-preview-description">Firewall kurallarını merkezi olarak yöneten web arayüzü. Otomatik yedekleme ve versiyon kontrolü.</p>
+                    <a href="projects.html" class="project-preview-link">Detayları gör →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">Gerçek Projelerle Çalışıyorum</h2>
+                <p class="cta-description">Production sistemler üzerinde edindiğim deneyimleri ve çözümlerimi inceleyebilirsiniz.</p>
+                <a href="projects.html" class="cta-button">Projeleri İncele →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">© 2025 [Ad Soyad]</div>
+      <div class="footer-mid">Kod GitHub'da açık</div>
+      <div class="footer-right">
+        <a href="https://github.com/kullaniciadın" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/profilin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="/assets/js/theme.js"></script>
+</body>
+</html>
+>>>>>>> 9a5ab87 (chore: import local changes)

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ops Log · Production Olay Kayıtları</title>
+  <meta name="description" content="Gerçek üretim ortamı notları: incident kök sebep analizleri, çözüm ve önlemler." />
+  <meta property="og:title" content="Ops Log · Production Olay Kayıtları" />
+  <meta property="og:description" content="Gerçek üretim ortamı notları: incident kök sebep analizleri, çözüm ve önlemler." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/ops-log/" />
+  <meta property="og:image" content="https://yourdomain.com/assets/og/default.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="/">[Ad Soyad]</a>
+      <ul class="nav-links">
+        <li><a href="/blog/index.html">Blog</a></li>
+        <li><a href="/projects/index.html">Projeler</a></li>
+        <li><a href="/ops-log/" class="active">Ops Log</a></li>
+        <li><a href="/about.html">Hakkımda</a></li>
+        <li><a href="/contact.html">İletişim</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Tema">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 class="page-title">Ops Log</h1>
+      <p class="page-description">Gerçek olaylardan kısa notlar. Tarih, kök sebep, çözüm ve önlem.</p>
+    </div>
+
+    <section class="card">
+      <div class="meta-line">2025-10-26 · 2025-10-26 · LVM / XFS</div>
+      <h2 class="post-title">Mount açıkken XFS büyümedi</h2>
+      <p class="post-desc">Canlı sistemde disk genişletildi ama df değişmedi.</p>
+      <ul style="margin-left:1rem;font-size:.9rem;line-height:1.4;">
+        <li><strong>Kök sebep:</strong> lvextend yapıldı ama xfs_growfs doğru hedefte çalıştırılmadı</li>
+        <li><strong>Çözüm:</strong> xfs_growfs /data, downtime almadan</li>
+        <li><strong>Önlem:</strong> Büyütme öncesi snapshot şart</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="meta-line">2025-04-15 · 2025-04-15 · Network</div>
+      <h2 class="post-title">Backup trafiği prod ağı doyuruyor</h2>
+      <p class="post-desc">Yoğun saatlerde kritik uygulamalarda gecikme artışı.</p>
+      <ul style="margin-left:1rem;font-size:.9rem;line-height:1.4;">
+        <li><strong>Kök sebep:</strong> Backup aynı VLAN üzerinden akıyor</li>
+        <li><strong>Çözüm:</strong> VLAN ayrıştırması ve ayrı gateway</li>
+        <li><strong>Önlem:</strong> Peak saatlerde job pencere kısıtı</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">© 2025 [Ad Soyad]</div>
+    <div class="footer-mid">Kod GitHub'da açık</div>
+    <div class="footer-right">
+      <a href="https://github.com/kullaniciadın" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/profilin" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="/assets/js/theme.js"></script>
+</body>
+</html>
