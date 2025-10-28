@@ -8,6 +8,7 @@
     <item>
       <title>LVM Extend Sonrası XFS Neden Büyümedi?</title>
       <link>https://emirhanbalci.com/blog/lvm-extend-xfs.html</link>
+      <description>Production ortamda LVM ile disk alanını genişlettikten sonra mount edilmiş XFS büyümedi. Bu yazı sorunu, yanlış denenen yolları ve kesintisiz çözümü anlatıyor.</description>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
     </item>
 

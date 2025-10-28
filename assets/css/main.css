@@ -480,78 +480,30 @@ body.dark .project-preview-card:hover {
   background-color: var(--accent-hover);
 }
 
-/* Footer with 3-column layout */
-/* Footer */
-.footer {
+/* site-footer with 3-column layout */
+.site-footer {
   border-top: 1px solid var(--border);
-  background-color: var(--bg);
-  margin-top: 4rem;
-}
-
-.footer-content {
+  margin-top: 3rem;
+  padding: 1.5rem 1rem 3rem;
   max-width: 760px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 2rem;
-}
-
-.footer-left {
-  text-align: left;
-}
-
-.footer-center {
-  text-align: center;
-}
-
-.footer-right {
-  text-align: right;
-}
-
-.footer-text {
-  font-size: 0.875rem;
+  font-size: .8rem;
   color: var(--muted);
-  margin-bottom: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-source {
-  font-size: 0.875rem;
+.site-footer a {
   color: var(--muted);
-}
-
-.footer-source a {
-  color: var(--accent);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.footer-source a:hover {
-  color: var(--accent-hover);
-}
-
-.footer-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
-}
-
-.footer-links a {
-  color: var(--muted);
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
+.site-footer a:hover {
   color: var(--text);
-}
-
-/* Adding footer-license style for copyright notice */
-.footer-license {
-  font-size: 0.75rem;
-  color: var(--muted);
-  margin-top: 0.25rem;
-  line-height: 1.4;
 }
 
 /* Responsive Design */

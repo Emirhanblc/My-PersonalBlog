@@ -1,17 +1,18 @@
-// Theme toggle functionality
-(() => {
-  const themeToggle = document.getElementById("themeToggle");
-  const html = document.documentElement;
+(function () {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
 
-  // Check for saved theme preference or default to light mode
-  const currentTheme = localStorage.getItem("theme") || "light";
-  html.setAttribute("data-theme", currentTheme);
+  const saved = window.localStorage.getItem("theme");
+  if (saved === "dark") document.body.classList.add("dark");
 
-  themeToggle.addEventListener("click", () => {
-    const currentTheme = html.getAttribute("data-theme");
-    const newTheme = currentTheme === "light" ? "dark" : "light";
-
-    html.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
+  btn.addEventListener("click", () => {
+    const isDark = document.body.classList.contains("dark");
+    if (isDark) {
+      document.body.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      document.body.classList.add("dark");
+      window.localStorage.setItem("theme", "dark");
+    }
   });
 })();
