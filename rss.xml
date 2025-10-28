@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
@@ -14,44 +13,3 @@
 
   </channel>
 </rss>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog - Sistem Yönetimi ve Web Backend</title>
-    <link>https://yourdomain.com</link>
-    <description>Production ortamlarında karşılaştığım sorunları ve çözümlerini paylaşıyorum. Sistem yönetimi, backend geliştirme ve güvenlik üzerine teknik yazılar.</description>
-    <language>tr</language>
-    <lastBuildDate>Mon, 15 Apr 2025 10:00:00 +0300</lastBuildDate>
-    <atom:link href="https://yourdomain.com/rss.xml" rel="self" type="application/rss+xml"/>
-    
-    <item>
-      <title>LVM Extend Sonrası XFS Büyümedi: Çözüm Adımları</title>
-      <link>https://yourdomain.com/blog/lvm-extend-xfs.html</link>
-      <description>Production VMware ortamında LVM genişletme işlemi sonrası XFS dosya sisteminin büyümeme sorununu nasıl çözdüm. Adım adım çözüm ve dikkat edilmesi gereken noktalar.</description>
-      <pubDate>Mon, 15 Apr 2025 10:00:00 +0300</pubDate>
-      <guid>https://yourdomain.com/blog/lvm-extend-xfs.html</guid>
-      <category>Güvenlik</category>
-      <category>Linux</category>
-    </item>
-
-    <item>
-      <title>Backup Network Ayrıştırma: VLAN Yapılandırması</title>
-      <link>https://yourdomain.com/blog/backup-network-ayirma.html</link>
-      <description>Yedekleme trafiğini ana network'ten ayırmak için VLAN tabanlı çözüm ve mimari.</description>
-      <pubDate>Tue, 08 Apr 2025 09:00:00 +0300</pubDate>
-      <guid>https://yourdomain.com/blog/backup-network-ayirma.html</guid>
-      <category>Network</category>
-    </item>
-
-    <item>
-      <title>Firebase Realtime Database ile Offline-First Uygulama</title>
-      <link>https://yourdomain.com/blog/offline-first-android.html</link>
-      <description>Android uygulamalarında offline-first mimari ve senkronizasyon stratejileri.</description>
-      <pubDate>Fri, 28 Mar 2025 10:00:00 +0300</pubDate>
-      <guid>https://yourdomain.com/blog/offline-first-android.html</guid>
-      <category>Android</category>
-    </item>
-  </channel>
-</rss>
->>>>>>> 9a5ab87 (chore: import local changes)

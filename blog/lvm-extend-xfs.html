@@ -10,11 +10,7 @@
     <meta property="og:description" content="Production VMware ortamında LVM genişletme işlemi sonrası XFS dosya sisteminin büyümeme sorununu nasıl çözdüm.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://yourdomain.com/blog/lvm-extend-xfs.html">
-<<<<<<< HEAD
     <meta property="og:image" content="https://yourdomain.com/assets/og-image.png">
-=======
-    <meta property="og:image" content="https://yourdomain.com/assets/og/default.png">
->>>>>>> 9a5ab87 (chore: import local changes)
     <meta property="article:published_time" content="2025-04-15T10:00:00+03:00">
     <meta property="article:author" content="Your Name">
     <meta property="article:tag" content="Linux">
@@ -27,7 +23,6 @@
     <meta name="twitter:image" content="https://yourdomain.com/assets/og-image.png">
     
     <link rel="stylesheet" href="../assets/css/main.css">
-<<<<<<< HEAD
 </head>
 <body>
     <header class="header">
@@ -54,25 +49,6 @@
     </header>
 
     <main class="main blog-post">
-=======
-    <link rel="stylesheet" href="/assets/css/prism.css">
-</head>
-<body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="/">[Ad Soyad]</a>
-        <ul class="nav-links">
-          <li><a href="/blog/index.html">Blog</a></li>
-          <li><a href="/projects/index.html">Projeler</a></li>
-          <li><a href="/about.html">Hakkımda</a></li>
-          <li><a href="/contact.html">İletişim</a></li>
-        </ul>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Tema">🌓</button>
-      </nav>
-    </header>
-
-    <main class="container blog-post">
->>>>>>> 9a5ab87 (chore: import local changes)
         <article>
             <header class="post-header">
                 <div class="post-meta-info">
@@ -100,11 +76,8 @@
 
                 <p>İşte karşılaştığım durum:</p>
 
-<<<<<<< HEAD
                 <pre><code># Disk genişletme sonrası
-=======
                 <pre><code class="language-bash"># Disk genişletme sonrası
->>>>>>> 9a5ab87 (chore: import local changes)
 lsblk
 NAME                MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda                   8:0    0  200G  0 disk 
@@ -122,11 +95,7 @@ Filesystem                Size  Used Avail Use% Mounted on
                     İlk olarak klasik <code>resize2fs</code> komutunu denedim, ancak XFS dosya sistemi için bu komut çalışmıyor. XFS için doğru komut <code>xfs_growfs</code>.
                 </p>
 
-<<<<<<< HEAD
                 <pre><code># Bu hata verdi
-=======
-                <pre><code class="language-bash"># Bu hata verdi
->>>>>>> 9a5ab87 (chore: import local changes)
 resize2fs /dev/mapper/vgdata-lvdata
 resize2fs: Bad magic number in super-block while trying to open /dev/mapper/vgdata-lvdata</code></pre>
 
@@ -134,11 +103,7 @@ resize2fs: Bad magic number in super-block while trying to open /dev/mapper/vgda
                     Sonra <code>xfs_growfs</code> komutunu denedim ama yine hata aldım:
                 </p>
 
-<<<<<<< HEAD
                 <pre><code># Bu da çalışmadı
-=======
-                <pre><code class="language-bash"># Bu da çalışmadı
->>>>>>> 9a5ab87 (chore: import local changes)
 xfs_growfs /dev/mapper/vgdata-lvdata
 xfs_growfs: /dev/mapper/vgdata-lvdata is not a mounted XFS filesystem</code></pre>
 
@@ -148,11 +113,7 @@ xfs_growfs: /dev/mapper/vgdata-lvdata is not a mounted XFS filesystem</code></pr
                 </p>
 
                 <h3>1. Mevcut Durumu Kontrol Et</h3>
-<<<<<<< HEAD
                 <pre><code># LVM boyutunu kontrol et
-=======
-                <pre><code class="language-bash"># LVM boyutunu kontrol et
->>>>>>> 9a5ab87 (chore: import local changes)
 lvdisplay /dev/vgdata/lvdata
   LV Size                199.00 GiB
 
@@ -166,11 +127,7 @@ mount | grep /data
 /dev/mapper/vgdata-lvdata on /data type xfs (rw,relatime)</code></pre>
 
                 <h3>2. XFS Dosya Sistemini Büyüt</h3>
-<<<<<<< HEAD
                 <pre><code># Doğru komut: mount point kullan, cihaz adı değil
-=======
-                <pre><code class="language-bash"># Doğru komut: mount point kullan, cihaz adı değil
->>>>>>> 9a5ab87 (chore: import local changes)
 xfs_growfs /data
 
 meta-data=/dev/mapper/vgdata-lvdata isize=512    agcount=4, agsize=6553600 blks
@@ -204,11 +161,7 @@ Filesystem                Size  Used Avail Use% Mounted on
                     Eğer LVM extend işlemini henüz yapmadıysanız, <code>-r</code> parametresi ile dosya sistemini otomatik büyütebilirsiniz:
                 </p>
 
-<<<<<<< HEAD
                 <pre><code># LVM extend ve dosya sistemi büyütme tek komutta
-=======
-                <pre><code class="language-bash"># LVM extend ve dosya sistemi büyütme tek komutta
->>>>>>> 9a5ab87 (chore: import local changes)
 lvextend -r -L +100G /dev/vgdata/lvdata
 
 # veya tüm boş alanı kullan
@@ -230,7 +183,6 @@ lvextend -r -l +100%FREE /dev/vgdata/lvdata</code></pre>
         </article>
     </main>
 
-<<<<<<< HEAD
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
@@ -258,18 +210,5 @@ lvextend -r -l +100%FREE /dev/vgdata/lvdata</code></pre>
     </footer>
 
     <script src="../assets/js/theme.js"></script>
-=======
-    <footer class="site-footer">
-    <div class="footer-left">© 2025 [Ad Soyad]</div>
-    <div class="footer-mid">Kod GitHub'da açık</div>
-    <div class="footer-right">
-    <a href="https://github.com/kullaniciadın" target="_blank" rel="noopener">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/profilin" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-    </footer>
-
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/prism.js"></script>
->>>>>>> 9a5ab87 (chore: import local changes)
 </body>
 </html>

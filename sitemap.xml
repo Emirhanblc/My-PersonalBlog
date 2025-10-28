@@ -13,31 +13,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-<<<<<<< HEAD
     <loc>https://yourdomain.com/blog/lvm-xfs-extend.html</loc>
-=======
-    <loc>https://yourdomain.com/blog/lvm-extend-xfs.html</loc>
->>>>>>> 9a5ab87 (chore: import local changes)
     <lastmod>2025-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-<<<<<<< HEAD
-=======
-    <loc>https://yourdomain.com/blog/backup-network-ayirma.html</loc>
-    <lastmod>2025-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/blog/offline-first-android.html</loc>
-    <lastmod>2025-03-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
->>>>>>> 9a5ab87 (chore: import local changes)
     <loc>https://yourdomain.com/projects/</loc>
     <lastmod>2025-04-15</lastmod>
     <changefreq>monthly</changefreq>
